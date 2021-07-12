@@ -1,0 +1,221 @@
+/* CSS reset  */
+*{
+margin: 0px;
+padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables  */
+:root{
+    --navbar-height:59px
+}
+/* Navgation Bar Style  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+    /* justify-content: center;  */
+}
+  #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+/* Navgation Bar: logo And Image  */
+#logo{
+    margin: 3px 17px;
+}
+
+#logo img{
+    width: 118px;
+    height: 73px;
+    
+}
+/* navigation Bar list stylying  */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan', cursive;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+ #navbar ul li a{
+     display: block;
+     padding: 3px 20px;
+     color: white;
+     border-radius: 20px;
+     text-decoration: none;
+
+ }
+ #navbar ul li a:hover{
+     color: black;
+     background-color: white;
+ }
+ /* Home section  */
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+     height: 439px;
+    }
+    #home::before{
+            content: "";
+            background: url('../img/background1.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 60%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: .78;  
+    }
+
+  #home h1{
+      color: white;
+      text-align: center;
+      font-family: 'Balthazar', serif;
+
+  }
+  #home p{
+    color: rgb(44, 9, 243);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Balthazar', serif;
+
+  }
+ /* Services section  */
+ #services{
+    
+     display: flex;
+ }
+ #services .box{
+     border: 2px solid brown;
+     margin: 20px;
+     padding: 12px;
+     background-color: rgb(247, 214, 175);
+     border-radius: 27px;
+
+ }
+
+ #services .box img{
+     display: block;
+     margin: auto;
+     height: 160px;
+ }
+ #services .box p{
+font-family: fantasy;
+ }
+ 
+ /* Clien Section  */
+ #client-section{
+     position: relative;
+    
+    }
+    #client-section::before{
+        content: "";
+        position: absolute;
+        background: url('../img/background2.jpg ')no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: .7;
+    }
+ #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #clients img{
+    height: 124px;
+   }
+   .Client-item{
+       padding: 34px;
+       
+   }
+   /* Contect Section  */
+   #contact{
+       position: relative;   
+   }
+   #contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: url('../img/contact.jpg') no-repeat center center/cover;
+     z-index: -1;
+     opacity: 0.6;
+   }
+   #contact-box{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-bottom: 34px;
+       
+   }
+   #contact-box input,
+   #contact-box textarea{
+       width: 100%;
+       padding: 0.5rem;
+       border-radius: 9px;
+       font-size: 1.1rem;
+   }
+   #contect-box form{
+   width: 40%;
+   }
+   #contect-box label{
+       font-size: 1.3rem;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   #contect-box label{
+       font-size: 1.3rem;
+       font-family: fantasy;
+   }
+   footer{
+       background: black;
+       color: white;
+       padding: 9px 20px;
+   }
+
+ /* Utility Classes  */
+ 
+ .h-primary{
+     font-size: 2.8rem;
+     padding: 12px;
+     font-family: 'Balthazar', serif;
+     font-family: 'Baloo Bhaijaan', cursive;
+    }
+
+ .h-secondary{
+     font-size: 1.8rem;
+     padding: 12px;
+     font-family: 'Balthazar', serif;
+     font-family: 'Baloo Bhaijaan', cursive;
+ }
+ .btn{
+     padding: 6px 20px;
+     border: 1px solid red;
+     border-radius: 15px;
+     background-color:yellowgreen;
+     color: white;
+     margin: 17px;
+     font-size: 1.2rem;
+     cursor: pointer;
+ }
+ .center{
+     text-align: center;
+ }
